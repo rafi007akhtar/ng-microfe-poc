@@ -6,15 +6,10 @@ import { AppComponent } from './app.component';
 import { Cmp2Component } from './cmp2/cmp2.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Cmp2Component
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, Cmp2Component],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [Cmp2Component],
 })
-export class AppModule { }
+export class AppModule {}
