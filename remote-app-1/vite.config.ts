@@ -9,7 +9,8 @@ export default defineConfig({
       name: 'remoteApp1',
       filename: 'remoteEntry.js',
       exposes: {
-        './Cmp1Component': './src/app/cmp1/cmp1.component.ts',
+        // './Cmp1Component': './src/app/cmp1/cmp1.component.ts',
+        './RemoteModule': './src/app/app-routing.module.ts',
       },
       shared: ['@angular/core', '@angular/common', '@angular/router'],
     }),
@@ -18,5 +19,8 @@ export default defineConfig({
     target: 'esnext',
     minify: false,
     cssCodeSplit: false,
+  },
+  server: {
+    port: 4201,
   },
 });

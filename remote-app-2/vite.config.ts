@@ -9,7 +9,8 @@ export default defineConfig({
       name: 'remoteApp2',
       filename: 'remoteEntry.js',
       exposes: {
-        './Cmp2Component': './src/app/cmp2/cmp2.component.ts',
+        // './Cmp2Component': './src/app/cmp2/cmp2.component.ts',
+        './RemoteModule': './src/app/app-routing.module.ts',
       },
       shared: ['@angular/core', '@angular/common', '@angular/router'],
     }),

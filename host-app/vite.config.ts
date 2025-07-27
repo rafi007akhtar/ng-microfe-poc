@@ -9,7 +9,7 @@ export default defineConfig({
       name: 'hostApp',
       remotes: {
         remoteApp1: 'http://localhost:4201/remoteEntry.js',
-        remoteApp2: 'http://localhost:4202/remoteEntry.js',
+        // remoteApp2: 'http://localhost:4202/remoteEntry.js',
       },
       shared: ['@angular/core', '@angular/common', '@angular/router'],
     }),
