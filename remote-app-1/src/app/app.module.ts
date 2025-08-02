@@ -6,15 +6,9 @@ import { AppComponent } from './app.component';
 import { Remote1Module } from './remote1/remote1.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    Remote1Module
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, Remote1Module],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
