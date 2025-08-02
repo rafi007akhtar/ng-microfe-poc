@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=4201",
-    "build": "ng build",
+    "start-legacy": "ng serve --port=4201",
+    "build-legacy": "ng build",
+    "start": "vite start",
+    "build": "vite build",
+    "preview": "vite preview",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
