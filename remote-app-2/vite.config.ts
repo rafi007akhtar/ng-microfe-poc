@@ -12,7 +12,7 @@ export default defineConfig({
       name: 'remote2',
       filename: 'remoteEntry.js',
       exposes: {
-        './Remote2Module': './src/app/app.module.ts',
+        './Remote2Module': './src/app/remote2/remote2.module.ts',
       },
       shared: {
         '@angular/core': { requiredVersion: '^17.0.0' },
