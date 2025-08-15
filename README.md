@@ -8,4 +8,4 @@ In this setup are:
   - movie-ticket
 - remote apps
   - movie-list
-  - ticket availability
+  - ticket-availability
