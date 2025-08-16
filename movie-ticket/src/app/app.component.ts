@@ -85,6 +85,8 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.listComponentRef?.destroy();
+    for (let remote of this.remoteData) {
+      remote.ref?.destroy();
+    }
   }
 }
