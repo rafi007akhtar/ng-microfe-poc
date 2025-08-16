@@ -2,6 +2,15 @@
 
 This repo is POC I am trying out for building an Angular app running a micro-frontend architecture.
 
+## This doesn't work
+After trying several approaches in different branches, the only one that has worked so far is this:
+https://github.com/rafi007akhtar/ng-microfe-poc/tree/tutorial-approach
+
+So please go over to that branch for an approach that works, and ignore this and any other branch.
+The remainder of this README will contain notes of an approach that doesn't work, so you might ignore.
+
+---
+
 Things to keep in mind:
 
 - The Angular version is 17, which means Webpack is not the bundler here, and so the webpack plugin and configuration will probably not work here.
