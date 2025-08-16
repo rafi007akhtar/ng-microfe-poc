@@ -7,38 +7,40 @@ type Movie = {
 };
 type Movies = Array<Movie>;
 
+const PORT = 4201;
+const pathToAssets = `http://localhost:${PORT}/assets`;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  // TODO: add images, such that they can be shared with other micro-frontends
   public movies: Movies = [
     {
       id: 1,
       title: 'Inception',
-      poster: '',
+      poster: `${pathToAssets}/inception.jpg`,
     },
     {
       id: 2,
       title: 'The Dark Knight',
-      poster: '',
+      poster: `${pathToAssets}/tdk.jpg`,
     },
     {
       id: 3,
       title: 'Interstellar',
-      poster: '',
+      poster: `${pathToAssets}/inters.jpg`,
     },
     {
       id: 4,
       title: 'The Matrix',
-      poster: '',
+      poster: `${pathToAssets}/matrix.jpg`,
     },
     {
       id: 5,
       title: 'The Avengers',
-      poster: '',
+      poster: `${pathToAssets}/avengers.jpg`,
     },
   ];
 
