@@ -13,6 +13,7 @@ type Movies = Array<Movie>;
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  // TODO: add images, such that they can be shared with other micro-frontends
   public movies: Movies = [
     {
       id: 1,
@@ -42,6 +43,8 @@ export class AppComponent {
   ];
 
   checkAvailability(id: number) {
-    // TODO: fill this later to communicate with the other MFs
+    window.dispatchEvent(
+      new CustomEvent('movieSelected', { detail: { movieId: id } })
+    );
   }
 }

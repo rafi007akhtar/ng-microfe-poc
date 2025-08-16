@@ -1,2 +1,3 @@
 <h1>Ticket Availability</h1>
-<div>Please select a movie</div>
+<div *ngIf="!availableTickets">Please select a movie</div>
+<div *ngIf="availableTickets">Ticket selected: {{ availableTickets }}</div>
