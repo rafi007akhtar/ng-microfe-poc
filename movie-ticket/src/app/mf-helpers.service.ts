@@ -1,12 +1,6 @@
 import { loadRemoteModule } from '@angular-architects/native-federation';
 import { Injectable } from '@angular/core';
-
-type RemoteProps = {
-  port: number;
-  name: string;
-  exposedModule?: string;
-  fallback?: string;
-};
+import { RemoteProps } from './models/common.models';
 
 @Injectable({
   providedIn: 'root',
