@@ -79,3 +79,23 @@ After running these commands:
   - federation.config.js
   - federation.manifest.json
 - The apps will will run. Running `ng serve` will serve the application in the port specified earlier, and you do not have to mention the port as `--port`.
+
+### Changes for Micro-Frontends
+
+I'm not going to write the steps here. You may look at the code.
+
+**Host changes:**
+
+- [app.component.ts](./movie-ticket/src/app/app.component.ts)
+- The bulk of the logic is here, plus the html file and the service file
+
+**Remote changes:**
+
+- [movie-list](./movie-list/src/app/app.component.ts)
+- [ticket-availability](./ticket-availability/src/app/app.component.ts)
+- Here, the data sharing is done through `CustomEvent`
+- Also, make sure any media like images have the respective PORT in their paths.
+
+And that's it. It finally works!
+
+---
